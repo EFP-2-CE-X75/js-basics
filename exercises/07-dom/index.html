@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices DOM</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .exercise {
+        margin-bottom: 30px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .result {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 3px;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercices sur le DOM</h1>
+    
+    <!-- Exercice 1 -->
+    <div class="exercise" id="ex1">
+      <h2>Exercice 1: sélection d'éléments</h2>
+      <div class="content">
+        <p>Ceci est un paragraphe de test.</p>
+        <p class="special">Ceci est un paragraphe spécial.</p>
+        <p>Un autre paragraphe.</p>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <!-- Exercice 2 -->
+    <div class="exercise" id="ex2">
+      <h2>Exercice 2: manipulation du contenu</h2>
+      <div class="content">
+        <p id="change-me">Ce texte va être modifié.</p>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <!-- Exercice 3 -->
+    <div class="exercise" id="ex3">
+      <h2>Exercice 3: manipulation des classes</h2>
+      <div class="content">
+        <p class="toggle-me">Ce paragraphe va changer de style.</p>
+      </div>
+      <div class="result"></div>
+    </div>
+
+    <!-- Exercice 4 -->
+    <div class="exercise" id="ex4">
+      <h2>Exercice 4: création d'éléments</h2>
+      <div class="content">
+        <div id="list-container"></div>
+      </div>
+      <div class="result"></div>
+    </div>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html> 

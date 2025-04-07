@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --primary-color: #1d1e1b;
+  --secondary-color: #8d806e;
+  --tertiary-color: #21221c;
+  --quaternary-color: #454035;
+  --quintary-color: #27261e;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-base-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: var(--font-base-size);
+  font-family: "Mouse Memoirs", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url('bg-body.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  width: 430px;
+  margin: 0 auto;
+  padding: 20px;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.grid-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--quintary-color);
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-out;
+}
+
+.grid-tile:hover {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+  cursor: not-allowed;
+}
+
+.grid-tile:hover.draggable {
+  background-color: var(--success-color);
+  color: var(--quintary-color);
+  cursor: move;
+}
+
+h1 {
+  text-align: center;
+  color: var(--quaternary-color);
+  font-size: 11rem;
+  margin: 0 0 0.2em 0;
+}
+
+.rules {
+  text-align: center;
+  color: var(--quaternary-color);
+  font-size: 1.7rem;
+  margin: 0.5em 0 1.5em 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2em 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--light-color);
+  cursor: pointer;
+  background-color: var(--tertiary-color);
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+footer {
+  margin: 20px 0 0 0;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+footer a:hover {
+  padding: 0.2em;
+  background: var(--tertiary-color);
+}

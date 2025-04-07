@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices sur les événements</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .exercise {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .content {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px dashed #ddd;
+        min-height: 50px;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 16px;
+      }
+      .active {
+        background-color: #ffeb3b;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Exercices sur les événements</h1>
+
+      <!-- Exercice 1 -->
+      <div class="exercise" id="ex1">
+        <h2>Exercice 1: Attachement d'écouteurs</h2>
+        <button id="btn1">Bouton 1 (onclick)</button>
+        <button id="btn2">Bouton 2 (addEventListener)</button>
+        <button id="btn3">Bouton 3 (mouseover)</button>
+        <input type="text" id="input1" placeholder="Tapez quelque chose...">
+      </div>
+
+      <!-- Exercice 2 -->
+      <div class="exercise" id="ex2">
+        <h2>Exercice 2: Gestion des événements</h2>
+        <button id="btn4">Bouton 4 (propriétés événement)</button>
+        <form id="form1">
+          <input type="text" name="username" placeholder="Nom d'utilisateur">
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <!-- Exercice 3 -->
+      <div class="exercise" id="ex3">
+        <h2>Exercice 3: Événements et DOM</h2>
+        <button id="btn5">Créer un paragraphe</button>
+        <div id="content1" class="content"></div>
+        <input type="text" id="input3" placeholder="Tapez quelque chose...">
+        <p id="output1">Le texte sera mis à jour ici</p>
+        <button id="btn6">Bascule classe active</button>
+        <div id="toggle1" class="content">Élément à basculer</div>
+      </div>
+
+      <!-- Exercice 4 -->
+      <div class="exercise" id="ex4">
+        <h2>Exercice 4: Événements avancés</h2>
+        <button id="btn7">Créer une liste</button>
+        <div id="content2" class="content"></div>
+        <button id="btn8">Stop propagation</button>
+        <div id="container1" class="content">
+          <button class="nested-btn">Bouton 1</button>
+          <button class="nested-btn">Bouton 2</button>
+          <button class="nested-btn">Bouton 3</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

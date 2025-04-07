@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices sur la gestion des erreurs</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .exercise {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px dashed #ddd;
+            min-height: 50px;
+        }
+        .error {
+            color: red;
+            background-color: #ffebee;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success {
+            color: green;
+            background-color: #e8f5e9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercices sur la gestion des erreurs</h1>
+
+    <!-- Exercice 1 -->
+    <div class="exercise" id="ex1">
+      <h2>Exercice 1: Try...Catch de base</h2>
+      <input type="text" id="jsonInput" placeholder='{"name": "John", "age": 30}'>
+      <button id="parseBtn">Parser JSON</button>
+      <div id="result1" class="result"></div>
+    </div>
+
+    <!-- Exercice 2 -->
+    <div class="exercise" id="ex2">
+      <h2>Exercice 2: Types d'erreurs</h2>
+      <input type="text" id="userName" placeholder="Nom">
+      <input type="email" id="userEmail" placeholder="Email">
+      <input type="number" id="userAge" placeholder="Âge">
+      <button id="validateBtn">Valider utilisateur</button>
+      <div id="result2" class="result"></div>
+    </div>
+
+    <!-- Exercice 3 -->
+    <div class="exercise" id="ex3">
+      <h2>Exercice 3: Gestion asynchrone</h2>
+      <button id="fetchBtn">Récupérer données utilisateur</button>
+      <div id="result3" class="result"></div>
+    </div>
+
+    <!-- Exercice 4 -->
+    <div class="exercise" id="ex4">
+      <h2>Exercice 4: Erreurs personnalisées</h2>
+      <input type="text" id="formName" placeholder="Nom">
+      <input type="email" id="formEmail" placeholder="Email">
+      <button id="validateFormBtn">Valider formulaire</button>
+      <div id="result4" class="result"></div>
+    </div>
+  </div>
+
+  <!-- <script src="script.js"></script>-->
+</body>
+</html> 
